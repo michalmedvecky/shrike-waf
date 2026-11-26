@@ -12,8 +12,8 @@ An open source web application firewall (Apache-2.0).
   localhost admin API and Prometheus metrics.
 - Connectors: thin modules inside web servers (nginx first). They fail open:
   if the daemon is slow or down, traffic passes.
-- Engines: ML (learning and protective modes) and ModSecurity/CRS.
-- Control plane (Go): manages many daemons; shared admin API, web UI,
+- Engines: ML (learning and protective modes) and ModSecurity/CRS. Ready interface for future implementations of additional engines.
+- Control plane (Go): manages many connected daemons (they connect here, not CP to daemons); shared admin API, web UI,
   OpenTofu provider, AI skill.
 
 ## Principles
@@ -61,6 +61,7 @@ roles, and coordinates with other leads.
 | 3 Control plane | Control plane, daemon to control plane communication, shared admin API |
 | 4 Experience | Web admin UI, OpenTofu provider, AI skill; UX across the product |
 | 5 DevOps and test | Dev infrastructure (VMs), deployment testing from docs only |
+| 6 Marketing | Someone who builds the website, community, and promotes the product |
 
 Roles used inside teams, as relevant: developer, UX designer, tech writer,
 reviewer, and critic (pushes every output toward excellence). Lead and role
